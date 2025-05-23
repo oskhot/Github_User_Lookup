@@ -1,0 +1,52 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 1rem;
+}
+
+section {
+  padding-top: 1rem;
+  display: table;
+  width: 100%;
+}
+
+section > * {
+  display: table-row;
+}
+
+section .col {
+  display: table-cell;
+  padding: 2px;
+  border: solid 1px grey;
+}
+
+header {
+  background-color: grey;
+  font-weight: bolder;
+}
+
+button {
+  background-color: cyan;
+  color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10%;
+  margin-left: 10px;
+}
+
+button[disabled] {
+  background-color: grey;
+}
+
+.error {
+  padding-top: 1rem;
+}
+
+label {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.input {
+  display: flex;
+}
