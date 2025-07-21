@@ -8,8 +8,6 @@ function App() {
   const [errMessage, setErrMessage] = useState("");
   const [isForked, setIsForked] = useState(false);
 
-  // const Github = "https://api.github.com/users/maruhgar/repos";
-
   const Github = `https://api.github.com/users/${userName}/repos`;
 
   const dataFetch = useCallback(async () => {
@@ -49,6 +47,8 @@ function App() {
   const handleCheckboxChange = () => {
     setIsForked(!isForked);
   };
+
+
 
   const filteredData = data.filter((item) => isForked || !item.fork);
 
